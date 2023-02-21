@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VD8</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> Your Detail: </legend>
+            <p> Name: <input type="text" name="Name" size="15" maxlength="30" /></p>
+            <p> Email: <input type="text" name="Email" size="15" maxlength="30" /></p>
+        </fieldset> <br>
+        <fieldset>
+            <legend> Your Review:</legend>
+            How did you hear about us?  <select name="cbb" id="cbb">
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">Youtube</option>
+              </select>
+            </select>
+            <p>Would you visit again ?
+            </br>
+                <input type="radio" name ="ques" value="yes"> Yes
+                <input type="radio" name ="ques" value="no"> No
+                <input type="radio" name ="ques" value="maybe"> Maybe
+            </p>
+            <p>Comment 
+            </br>
+            <textarea name="comment" id="comment" cols="100" rows="5"></textarea>
+            </p>
+            <p><input type="checkbox" id="ckbox" name="check1" value="check">
+                Sign me up for email update 
+            </br>
+            <button type="button">Submit review</button>
+            </p>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

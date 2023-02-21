@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giải phương trình bậc 1</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>Giải phương trình bậc 1</h1>
+    <form>
+      <label for="a">Nhập hệ số a:</label>
+      <input type="number" id="a" name="a" required>
+
+      <label for="b">Nhập hệ số b:</label>
+      <input type="number" id="b" name="b" required>
+
+      <button type="button" onclick="giaiPTBac1()">Giải</button>
+    </form>
+
+    <div id="ket-qua"></div>
+
+    <script>
+       function giaiPTBac1(){
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+
+        
+
+        if (a === 0) {
+          if (b === 0)    {
+            document.getElementById("ket-qua").innerHTML = "Phương trình vô số nghiệm";
+          } else {
+            document.getElementById("ket-qua").innerHTML = "Phương trình vô nghiệm";
+          }
+        } else {
+          let x = -b / a;
+          document.getElementById("ket-qua").innerHTML = "Nghiệm của phương trình là: " + x;
+        }
+        getElementByClass
+      }
+    </script>
+  </body>
+</html>
